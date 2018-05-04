@@ -1,0 +1,19 @@
+{% extends 'calendarapp/base.html' %}
+
+<div class='container'>
+  {% block content %}
+    <p>departure time - {{ flight.dep_time }}</p>
+    <p>departure delay - {{ flight.dep_delay }}</p>
+    <p>arrival time - {{ flight.arr_time }}</p>
+    <p>arrival delay - {{ flight.arr_delay }}</p>
+    <p>cancelled - {{ flight.cancelled }}</p>
+    <p>carrier - {{ flight.carrier }}</p>
+    <p>tail number - {{ flight.tailnum }}</p>
+    <p>flight - {{ flight.flight }}</p>
+    <p>origin - {{ flight.origin }}</p>
+    <p>destination - {{ flight.dest }}</p>
+    <p>air time - {{ flight.air_time }}</p>
+    <p>distance - {{ flight.distance }} km</p>
+    <p>duration - {{ flight.duration }}</p>
+  {% endblock %}
+</div>

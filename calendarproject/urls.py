@@ -18,6 +18,7 @@ from django.urls import path
 from calendarapp import views
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='index'),
+    path('flight/<int:pk>', views.details, name='details'),
     path('admin/', admin.site.urls),
 ]

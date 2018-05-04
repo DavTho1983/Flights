@@ -1,9 +1,8 @@
 <div class="calendar_entry col-lg-4">
   <br>
   {% block content %}
-      <h2>{{ flight.date }}</h2>
-      <h2>{{ flight.flight }}</h2>
-      <h2>{{ flight.dest }}</h2>
+      <h4>Flight Date - {{ flight.date }}</h4>
+      <button onclick="window.location='{% url 'details' pk=flight.id %}'">View Details</button>
   {% endblock %}
 
 </div>

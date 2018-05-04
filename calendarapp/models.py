@@ -18,4 +18,4 @@ class Flight(models.Model):
     duration = models.DurationField()
 
     def __str__(self):
-        return f'{self.flight} {self.dest} {self.date}'
+        return f'{self.date} {self.dep_time} {self.dep_delay} {self.arr_time} {self.arr_delay} {self.cancelled} {self.carrier} {self.tailnum} {self.flight} {self.origin} {self.dest} {self.air_time} {self.distance} {self.duration}'
