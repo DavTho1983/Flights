@@ -20,5 +20,6 @@ from calendarapp import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('flight/<int:pk>', views.details, name='details'),
+    path('flight/add', views.add, name='add'),
     path('admin/', admin.site.urls),
 ]

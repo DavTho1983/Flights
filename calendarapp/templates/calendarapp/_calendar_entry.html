@@ -2,7 +2,7 @@
   <br>
   {% block content %}
       <h4>Flight Date - {{ flight.date }}</h4>
-      <button onclick="window.location='{% url 'details' pk=flight.id %}'">View Details</button>
+      <button class='btn button-default' onclick="window.location='{% url 'details' pk=flight.id %}'">View Details</button>
   {% endblock %}
 
 </div>

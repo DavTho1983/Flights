@@ -15,5 +15,6 @@
     <p>air time - {{ flight.air_time }}</p>
     <p>distance - {{ flight.distance }} km</p>
     <p>duration - {{ flight.duration }}</p>
+    <button class='btn button-default' onclick="window.location='{% url 'index' %}'">Back to flights</button>
   {% endblock %}
 </div>
